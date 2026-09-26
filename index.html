@@ -12,17 +12,18 @@
 
   <link rel="canonical" href="https://orakcimustafa9656.github.io/">
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:title" content="Mustafa Orakcı | Serbest Muhasebeci Mali Müşavir">
   <meta property="og:description" content="Turgutlu ve Manisa'da muhasebe, vergi, SGK ve mali müşavirlik hizmetleri.">
   <meta property="og:url" content="https://orakcimustafa9656.github.io/">
 
+  <!-- Structured Data / Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "@id": "https://orakcimustafa9656.github.io/#business",
     "name": "Mustafa Orakcı - Serbest Muhasebeci Mali Müşavir",
     "url": "https://orakcimustafa9656.github.io/",
     "telephone": "+905334819656",
@@ -50,6 +51,11 @@
       "Vergi Danışmanlığı",
       "Mali Analiz ve Raporlama",
       "SGK ve İşveren Danışmanlığı",
+      "Şirket Kuruluşu",
+      "İşletme Kuruluşu",
+      "Şahıs İşletmesi Kuruluşu",
+      "Limited Şirket Kuruluşu",
+      "Anonim Şirket Kuruluşu",
       "Şirket Kuruluşu ve Yapısal İşlemler",
       "E-Dönüşüm ve Dijital Mali Sistemler"
     ]
@@ -71,13 +77,9 @@
       --max:1180px;
     }
 
-    *{
-      box-sizing:border-box
-    }
+    *{box-sizing:border-box}
 
-    html{
-      scroll-behavior:smooth
-    }
+    html{scroll-behavior:smooth}
 
     body{
       margin:0;
@@ -87,10 +89,7 @@
       line-height:1.6;
     }
 
-    a{
-      color:inherit;
-      text-decoration:none
-    }
+    a{color:inherit;text-decoration:none}
 
     .container{
       width:min(var(--max),calc(100% - 40px));
@@ -157,13 +156,9 @@
       transition:.25s ease;
     }
 
-    .menu a:hover:after{
-      right:0
-    }
+    .menu a:hover:after{right:0}
 
-    .hero{
-      padding:88px 0 84px
-    }
+    .hero{padding:88px 0 84px}
 
     .hero-grid{
       display:grid;
@@ -334,9 +329,7 @@
       margin-top:4px
     }
 
-    section{
-      padding:88px 0
-    }
+    section{padding:88px 0}
 
     .section-head{
       display:flex;
@@ -424,4 +417,612 @@
     }
 
     .approach-intro{
-     
+      color:rgba(255,255,255,.72);
+      max-width:520px
+    }
+
+    .steps{
+      display:grid;
+      gap:14px
+    }
+
+    .step{
+      display:grid;
+      grid-template-columns:54px 1fr;
+      gap:16px;
+      padding:18px 0;
+      border-top:1px solid rgba(255,255,255,.14)
+    }
+
+    .step:first-child{
+      border-top:0;
+      padding-top:0
+    }
+
+    .step-num{
+      font-size:12px;
+      letter-spacing:.1em;
+      opacity:.55;
+      padding-top:3px
+    }
+
+    .step h3{
+      margin:0 0 5px;
+      font-size:18px
+    }
+
+    .step p{
+      margin:0;
+      color:rgba(255,255,255,.68);
+      font-size:14px
+    }
+
+    .trust{
+      background:#fff
+    }
+
+    .trust-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px
+    }
+
+    .trust-item{
+      padding:28px 4px;
+      border-top:2px solid var(--green)
+    }
+
+    .trust-item h3{
+      margin:0 0 8px;
+      font-size:18px
+    }
+
+    .trust-item p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px
+    }
+
+    .contact{
+      padding:96px 0
+    }
+
+    .contact-box{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:54px;
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:40px;
+      box-shadow:var(--shadow)
+    }
+
+    .contact-box h2{
+      font-size:48px;
+      line-height:1.04;
+      letter-spacing:-.05em;
+      margin:0 0 16px
+    }
+
+    .contact-box p{
+      color:var(--muted);
+      max-width:560px
+    }
+
+    .contact-details{
+      display:grid;
+      gap:15px;
+      align-content:center
+    }
+
+    .contact-line{
+      padding-bottom:13px;
+      border-bottom:1px solid var(--line)
+    }
+
+    .contact-line small{
+      display:block;
+      color:var(--muted);
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.1em
+    }
+
+    .contact-line strong{
+      display:block;
+      font-size:16px;
+      margin-top:4px
+    }
+
+    .contact-line a{
+      transition:.2s ease
+    }
+
+    .contact-line a:hover{
+      color:var(--green-2)
+    }
+
+    footer{
+      padding:28px 0 42px;
+      color:var(--muted);
+      font-size:12px
+    }
+
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      border-top:1px solid var(--line);
+      padding-top:22px
+    }
+
+    @media (max-width:920px){
+      .hero-grid,
+      .approach,
+      .contact-box{
+        grid-template-columns:1fr
+      }
+
+      .services{
+        grid-template-columns:repeat(2,1fr)
+      }
+
+      .trust-grid{
+        grid-template-columns:1fr
+      }
+
+      .hero-card{
+        min-height:410px
+      }
+
+      .metric{
+        margin-top:95px
+      }
+    }
+
+    @media (max-width:680px){
+      .container{
+        width:min(var(--max),calc(100% - 24px))
+      }
+
+      .nav-inner{
+        height:auto;
+        min-height:70px;
+        padding:13px 0;
+        align-items:flex-start
+      }
+
+      .menu{
+        gap:14px;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+        font-size:12px
+      }
+
+      .brand span{
+        font-size:9px
+      }
+
+      .hero{
+        padding:58px 0
+      }
+
+      h1{
+        font-size:46px
+      }
+
+      .hero-copy{
+        font-size:16px
+      }
+
+      .hero-card{
+        min-height:360px;
+        padding:24px
+      }
+
+      .mini-grid{
+        left:24px;
+        right:24px;
+        bottom:24px
+      }
+
+      .metric{
+        margin-top:76px
+      }
+
+      .metric-value{
+        font-size:58px
+      }
+
+      section{
+        padding:65px 0
+      }
+
+      .section-head{
+        display:block
+      }
+
+      .section-head h2{
+        font-size:34px;
+        margin-bottom:14px
+      }
+
+      .services{
+        grid-template-columns:1fr
+      }
+
+      .approach h2,
+      .contact-box h2{
+        font-size:36px
+      }
+
+      .contact-box{
+        padding:30px
+      }
+
+      .footer-inner{
+        display:block
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+
+      <a class="brand" href="#">
+        <strong>Mustafa Orakcı</strong>
+        <span>Serbest Muhasebeci Mali Müşavir</span>
+      </a>
+
+      <div class="menu">
+        <a href="#">Ana Sayfa</a>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#yaklasim">Yaklaşımımız</a>
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#iletisim">İletişim</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div>
+          <div class="eyebrow">Mali Müşavirlik &amp; Danışmanlık</div>
+
+          <h1>Mali süreçlerinizde netlik. İşletmenizde güven.</h1>
+
+          <p class="hero-copy">
+            Muhasebe, vergi ve mali süreçlerinizi profesyonel bir yaklaşımla yönetiyor;
+            işletmenizin sağlam ve bilinçli kararlar almasına katkı sağlıyoruz.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#hizmetler">Hizmetleri İncele</a>
+            <a class="btn btn-light" href="#iletisim">İletişime Geç</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+
+          <div class="card-kicker">Mali Perspektif</div>
+
+          <div class="metric">
+            <div class="metric-value">Netlik</div>
+            <div class="metric-label">
+              Doğru bilgi, doğru planlama, bilinçli kararlar.
+            </div>
+          </div>
+
+          <div class="mini-grid">
+
+            <div class="mini">
+              <b>Mevzuat</b>
+              <span>Güncel yaklaşım</span>
+            </div>
+
+            <div class="mini">
+              <b>Analiz</b>
+              <span>Mali görünüm</span>
+            </div>
+
+            <div class="mini">
+              <b>Danışmanlık</b>
+              <span>Karar desteği</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="hizmetler">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <h2>
+            Sadece muhasebe değil, işletmenizin mali yol haritası.
+          </h2>
+
+          <p>
+            Mali müşavirliği yalnızca kayıt ve beyan süreçleri olarak değil,
+            işletmenin mali yapısını anlamaya ve doğru kararları desteklemeye
+            yönelik bir danışmanlık alanı olarak ele alıyoruz.
+          </p>
+
+        </div>
+
+        <div class="services">
+
+          <article class="service">
+            <div class="num">01</div>
+
+            <h3>Genel Muhasebe ve Mali Müşavirlik</h3>
+
+            <p>
+              İşletmenizin mali yapısını bütüncül bir yaklaşımla ele alıyor,
+              muhasebe süreçlerinin doğru ve mevzuata uygun şekilde yürütülmesini sağlıyoruz.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="num">02</div>
+
+            <h3>Vergi Danışmanlığı</h3>
+
+            <p>
+              Vergi yükümlülüklerinizi değerlendiriyor, güncel mevzuat çerçevesinde
+              doğru ve sürdürülebilir mali çözümler sunuyoruz.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="num">03</div>
+
+            <h3>Mali Analiz ve Raporlama</h3>
+
+            <p>
+              Mali tablolarınızı yalnızca kayıt olarak değil, işletmenizin finansal
+              durumunu ve performansını ortaya koyan bir yönetim aracı olarak değerlendiriyoruz.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="num">04</div>
+
+            <h3>SGK ve İşveren Danışmanlığı</h3>
+
+            <p>
+              İşverenlerin SGK ve çalışma hayatından doğan mali yükümlülüklerini
+              değerlendiriyor, süreçlerin mevzuata uygun yönetilmesine danışmanlık sağlıyoruz.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="num">05</div>
+
+            <h3>Şirket Kuruluşu ve Yapısal İşlemler</h3>
+
+            <p>
+              İşletmenizin kuruluşundan şirket yapısındaki değişikliklere kadar
+              ihtiyaç duyulan mali ve vergisel süreçlerde profesyonel danışmanlık sunuyoruz.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="num">06</div>
+
+            <h3>E-Dönüşüm ve Dijital Mali Sistemler</h3>
+
+            <p>
+              E-Fatura, E-Arşiv, E-Defter ve diğer dijital mali uygulamalarda
+              işletmenizin ihtiyaçlarına uygun çözümler oluşturuyoruz.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="yaklasim" class="dark">
+
+      <div class="container approach">
+
+        <div>
+
+          <h2>Mali müşavirlikte yaklaşımımız</h2>
+
+          <p class="approach-intro">
+            İşletmenizin mevcut durumunu anlayıp mevzuat çerçevesinde planlıyor,
+            süreçleri takip ediyor ve ihtiyaç duyduğunuz noktalarda mali bakış
+            açısıyla danışmanlık sağlıyoruz.
+          </p>
+
+        </div>
+
+        <div class="steps">
+
+          <div class="step">
+            <div class="step-num">01</div>
+
+            <div>
+              <h3>Analiz</h3>
+              <p>
+                İşletmenizin mali yapısını ve ihtiyaçlarını değerlendiriyoruz.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">02</div>
+
+            <div>
+              <h3>Planlama</h3>
+              <p>
+                Mevzuat çerçevesinde uygun mali çözümleri planlıyoruz.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">03</div>
+
+            <div>
+              <h3>Takip</h3>
+              <p>
+                Süreçleri düzenli şekilde takip ediyor ve gelişmeleri değerlendiriyoruz.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">04</div>
+
+            <div>
+              <h3>Danışmanlık</h3>
+              <p>
+                İşletme kararlarınızda mali açıdan yol gösteriyoruz.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="hakkimizda" class="trust">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <h2>Profesyonel mali müşavirlik anlayışı</h2>
+
+          <p>
+            İşletmenizin mali süreçlerinde yalnızca bugünü değil,
+            sürdürülebilir ve sağlıklı bir mali yapıyı gözetiyoruz.
+          </p>
+
+        </div>
+
+        <div class="trust-grid">
+
+          <div class="trust-item">
+            <h3>Güncel Mevzuat</h3>
+            <p>
+              Vergi ve mali yükümlülüklerde güncel düzenlemeleri takip eden bir yaklaşım.
+            </p>
+          </div>
+
+          <div class="trust-item">
+            <h3>Çözüm Odaklılık</h3>
+            <p>
+              İhtiyaca göre şekillenen, uygulanabilir ve anlaşılır mali çözümler.
+            </p>
+          </div>
+
+          <div class="trust-item">
+            <h3>Güven ve Şeffaflık</h3>
+            <p>
+              Mali süreçlerde açık iletişim ve anlaşılır bilgi akışı.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="iletisim" class="contact">
+
+      <div class="container">
+
+        <div class="contact-box">
+
+          <div>
+
+            <h2>
+              İşletmenizin mali süreçlerini birlikte değerlendirelim.
+            </h2>
+
+            <p>
+              Muhasebe, vergi ve mali müşavirlik hizmetleri hakkında bilgi almak
+              veya işletmenizin mali süreçlerini değerlendirmek için iletişime geçebilirsiniz.
+            </p>
+
+          </div>
+
+          <div class="contact-details">
+
+            <div class="contact-line">
+              <small>Telefon</small>
+
+              <strong>
+                <a href="tel:+905334819656">
+                  0533 481 9656
+                </a>
+              </strong>
+            </div>
+
+            <div class="contact-line">
+              <small>E-posta</small>
+
+              <strong>
+                <a href="mailto:orakci_mustafa@hotmail.com.tr">
+                  orakci_mustafa@hotmail.com.tr
+                </a>
+              </strong>
+            </div>
+
+            <div class="contact-line">
+              <small>Ofis</small>
+
+              <strong>
+                Yılmazlar Mahallesi Gül Sokak No:4 Turgutlu / Manisa
+              </strong>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div>
+        Mustafa Orakcı · Serbest Muhasebeci Mali Müşavir
+      </div>
+
+      <div>
+        © 2026 Tüm hakları saklıdır.
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
